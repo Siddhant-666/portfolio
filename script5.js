@@ -44,7 +44,7 @@ function clear() {
     a.classList.add("nal2");
 }
 document.getElementById('Resume').addEventListener('click', function() {
-    window.scrollTo({ top: 4*window.innerHeight, behavior: 'smooth' });
+    window.scrollTo({ top: 6*window.innerHeight, behavior: 'smooth' });
 });
 document.getElementById('btn').addEventListener('click', function() {
     window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
@@ -62,6 +62,9 @@ document.getElementById('projects').addEventListener('click', function() {
 });
 document.getElementById('pro').addEventListener('click', function() {
     window.scrollTo({ top: 3*window.innerHeight, behavior: 'smooth' });
+});
+document.getElementById('Robotics').addEventListener('click', function() {
+  window.scrollTo({ top: 4*window.innerHeight, behavior: 'smooth' });
 });
 const sky = document.querySelector('.section1');
 const starCount = 100;  
@@ -123,6 +126,17 @@ window.addEventListener('scroll', () => {
       }
     }, 500); // Duration of the transition
   }
+  function showPopup(content) {
+    const popup = document.getElementById('popup');
+    const popupContent = document.getElementById('popup-content');
+    popupContent.textContent = content;
+    popup.classList.add('active');
+}
+
+function closePopup() {
+    const popup = document.getElementById('popup');
+    popup.classList.remove('active');
+}
   
   const box = document.querySelector('.card-img-top');
   const animateBox = document.querySelector('.card-body');
