@@ -11,6 +11,26 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 
 <body>
@@ -32,7 +52,7 @@
       <div class="name">
         <p class="b">Siddhant Thalal</p>
 
-        <p>full stack Developer</p>
+
       </div>
       <div class="info">
         <i class="fa-solid fa-bars"></i>
@@ -40,9 +60,7 @@
     </div>
     <div class="alpha">
       <div class="image">
-        <img
-          src="siddhant.JPG"
-          alt="" />
+        <img src="siddhant.JPG" alt="" />
       </div>
       <div class="info2">
         <h1>
@@ -72,6 +90,9 @@
       <div class="bl">
         <input type="button" name="Projects" id="projects" value="Projects" />
       </div>
+      <div class="bl">
+        <input type="button" name="Robotics" id="Robotics" value="Robotics" />
+      </div>
     </div>
     <hr class="line">
     <div class="social_media">
@@ -84,11 +105,14 @@
         <a
           href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEZ1S-owTzL7wAAAZCi8Ltgy_b2AsbkctL-FVoSDme4muB3F8oTKeu42qxwyAtBsLclQMtGklsAOFCeH03x-e4bNYNIO_3qopd_6LmxzS_halYnJR3O7TTIlyT2EiI_-RUNMk4=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsid"><i
             class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@siddhantthalalb21me066">
+
+          <i class="fa-brands fa-youtube"></i></a>
       </ul>
     </div>
     <div class="nav">
       <p>About me</p>
-      
+
       <ul>
         <li><a href="https://github.com/Siddhant-666">Github profile</a></li>
         <li><a
@@ -96,7 +120,11 @@
             in profile</a></li>
         <li class="pro" id="pro">Projects</li>
         <li id="ski" class="ski">Skills</li>
+        <li> <a href="https://www.youtube.com/@siddhantthalalb21me066">
+
+            YouTube Channel</a></li>
         <li id="close"><i class="fa-solid fa-xmark"></i></li>
+
       </ul>
 
 
@@ -173,17 +201,19 @@
 
     </div>
     <section class="section_projects">
-      <header><h1>Projects</h1></header>
+      <header>
+        <h1>Projects</h1>
+      </header>
       <div class="box_projects">
-        <div class="car" >
-          <img src="Screenshot 2024-08-03 202029.png" class="card-img-top" >
+        <div class="car">
+          <img src="Screenshot 2024-08-03 202029.png" class="card-img-top">
           <div class="card-body">
             <h3 class="card-text"><b>Waterlust: Explore and Review Scenic Getaways.</b></h3>
             <p class="tech"> HTML • CSS • JavaScript • MongoDB • Express • Node.js • Joi</p>
           </div>
         </div>
-        <div class="car" >
-          <img src="projectImage.png" class="card-img-top1" >
+        <div class="car">
+          <img src="projectImage.png" class="card-img-top1">
           <div class="card-body1">
             <h3 class="card-text"> <b> Personal Portfolio Website</b></h3>
             <p class="tech"> HTML • CSS • Java • Script</p>
@@ -192,17 +222,79 @@
       </div>
 
     </section>
+    <section class="section5">
+      <h2 class="robota">Robotics Section</h2>
+      <div class="projects-container">
+        <div class="project-box"
+          onclick="showPopup('Developed a depth control system for an underwater robot using pressure sensors and an Arduino-based control mechanism. Designed and implemented a syringe-and-motor system to inject and eject water, dynamically altering the robot\'s mass and buoyant force for precise depth regulation. Utilized PID control algorithms to ensure accurate and responsive adjustments, delivering a reliable solution for underwater operations.')">
+          <img src="resized_image_150x150.png" alt="Autonomous Navigation">
+          <p>Depth Control of an Underwater Robot</p>
+        </div>
+        <div class="project-box"
+          onclick="showPopup('Developed and tested the robot’s leg, focusing on design, movement, and control. Conducted experiments to refine gait and ensure stable operation. I\'m developing a quadruped robot designed to navigate desert terrains. The focus is on creating strong and flexible legs that can handle uneven, sandy surfaces. Watch the video below.')">
+
+          <img src="WhatsApp Image 2025-01-02 at 22.07.45_5ad1eedb.jpg" alt="Robotic Arm">
+          <p>Quadruped</p>
+        </div>
+        <div class="project-box"
+          onclick="showPopup('Developed a path planning system using GPS sensors to collect location data, which was transmitted to a mobile app for processing and navigation commands. Implemented motor control algorithms for navigation and integrated LIDAR and ultrasonic sensors for obstacle detection, including dynamic ones. Designed and integrated hardware and software for seamless operation.')">
+          <img src="d0f5e0b7-86f6-49c2-8e5b-020decc59c7d.webp" alt="Drone Swarm">
+          <p>Roboguide</p>
+        </div>
+        <div class="project-box"
+          onclick="showPopup('you can check out all my experiments and projects on my YouTube channel!')">
+          <img src="WhatsApp Image 2025-01-02 at 22.24.16_d20b9149.jpg" alt="Underwater Robot">
+          <p>Exploring Autonomous Robotics: A TurtleBot and OpenManipulator</p>
+        </div>
+        <div class="project-box"
+          onclick="showPopup('Developed an ML model to find the charging socket using image recognition, and then plug the socket based on input coordinates. The project involved the creation of an intelligent system combining machine learning and robotics to autonomously perform a specific task. Ideation included the development of the robot and its movement, using image recognition to locate the charging port, finding the angle for plugging in using vector analysis, and determining the coordinates of the end effector with forward kinematics and ML.')">
+          <img src="https://via.placeholder.com/150" alt="Industrial Automation">
+          <p> LANDROVER,JAGUAR(INTERIIT-TECHMEET)
+            ROBOTICCHARGINGCHALLENGE</p>
+        </div>
+        <div class="project-box"
+          onclick="showPopup('We are developing a prosthetic arm that utilizes EMG sensors and other components to respond to muscle movements. The arm is automated to perform precise tasks, allowing users to control it based on their muscle responses.')">
+          <img src="https://via.placeholder.com/150" alt="Humanoid Robot">
+          <p>Prosthetic Arm</p>
+        </div>
+      </div>
+
+      <div id="popup" class="popup-window">
+        <div id="popup-content"></div>
+        <a class="popup-close-btn" onclick="closePopup()">Close</a>
+      </div>
+
+
+    </section>
+    <section class="section4">
+      <header class="quad">
+        <h1>Quadruped Leg Gait Mechanism</h1>
+      </header>
+
+      <div class="container">
+        <h1>Quadruped Leg Gait Mechanism</h1>
+        <video controls>
+          <source src="Quadruped leg.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
 
   </div>
 
   </div>
 
 
-  <div class="section3">
-    <object class="pdf" data="Resume_Siddhant_Thalal(B21ME066)_SDE.pdf"
+  <div class="section6">
+    <object class="pdf" data="Quadruped leg.mp4"
       width=100% height=729.60px>
   </div>
+  <!-- <a href="C:\Users\HP\Downloads\Siddhant Thalal_B21ME066_IIT JODHPUR resume_internship IMP.pdf" class="resume-link" download>Download My Resume</a>
+  <iframe src="C:\Users\HP\Downloads\Siddhant Thalal_B21ME066_IIT JODHPUR resume_internship IMP.pdf" class="pdf"></iframe> -->
+
   <script src="script5.js"></script>
+
+
 </body>
 
 </html>
